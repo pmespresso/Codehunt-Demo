@@ -1,0 +1,856 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+
+
+
+
+
+
+/* ================== CUSTOM CSS ================== */
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 13px;
+  color: #444444;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a {
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+}
+
+
+/* ================== PRODUCT LIST CSS ================== */
+
+.product-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.product-item {
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.product-item:hover {
+  background-color: #f2f2f2;
+}
+
+.product-item > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-item-media {
+  width: 130px;
+  height: 90px;
+}
+
+.product-item-info {
+  padding: 0 20px;
+  height: 90px;
+}
+
+.product-item-info p {
+  color: #999999;
+  font-size: 14px;
+}
+
+.product-item-link {
+  display: block;
+  width: 20px;
+  padding: 3px;
+  border-radius: 50%;
+  float: right;
+  background: white;
+  text-align: center;
+}
+
+.small-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* ================== UPVOTE BUTTON CSS ================== */
+
+
+.upvote-button {
+  font-weight: 600;
+  margin-right: 15px;
+  width: 34px;
+  text-align: center;
+  padding: 4px 0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.upvote-button:hover {
+  color: #5e9aee;
+  font-weight: 900;
+}
+
+.upvote-button.active {
+  color: #5e9aee;
+}
+
+.upvote-button > * {
+  display: block;
+  padding: 3px;
+}
+
+
+/* ================== NAVBAR CSS ================== */
+
+.login-btn {
+  padding-top: 9px;
+  color: #999999;
+  font-weight: 500;
+  font-size: 11px;
+  display: block;
+  width: 50px;
+  height: 22px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.login-btn:hover {
+  color: #da552f;
+}
+
+.navbar {
+  text-align: center;
+  padding: 10px 10px 5px;
+}
+
+.navbar .left-side {
+  float: left;
+}
+
+.navbar .left-side .product-search {
+  background-color: #f2f2f2;
+  color: #999999;
+  padding: 0 12px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 200px;
+  outline: 0;
+}
+
+.navbar .right-side {
+  float: right;
+}
+
+.navbar .right-side span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+
+.navbar .right-side:hover {
+  color: #da552f;
+}
+
+/* ================== POPUP CSS ================== */
+
+.popup .popup-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.97;
+}
+
+.popup .popup-wrap img {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  cursor: pointer;
+}
+
+.popup .popup-content {
+  position: fixed;
+}
+
+button {
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.popup-content.login-popup {
+  text-align: center;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.facebook-btn {
+  color: white;
+  background-color: #3b5998;
+  margin: 20px;
+}
+
+/* ================== PostPOPUP CSS ================== */
+
+.post-popup {
+  width: 90%;
+  right: 0;
+  top: 0;
+  background-color: white;
+}
+
+.post-btn {
+  color: white;
+  background-color: #5e9aee;
+}
+
+.post-popup .post-header {
+  background-color: #5e9aee;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 20%;
+}
+
+.post-popup .post-footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  height: 10%;
+}
+
+.post-popup > section {
+  font-size: 14px;
+  border: 1px solid #f2f2f2;
+  padding: 20px 0;
+  height: 70%;
+  color: #928888;
+}
+
+.post-popup > section table {
+  width: 100%;
+}
+
+.post-popup > section table tr td {
+  padding: 30px;
+}
+
+.post-popup > section table tr td:first-child {
+  width: 20%;
+}
+
+.post-popup > section table tr td:last-child {
+  width: 80%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.post-popup > section table input {
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  width: 100%;
+}
+
+/* ================== ProductPopup CSS ================== */
+
+.product-popup {
+  width: 80%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: white;
+  overflow: scroll;
+  border-left: 1px solid #f0efef;
+}
+
+.product-popup header {
+  text-align: center;
+  background-color: #5e9aee;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-popup header .header-shadow {
+  background-color: transparent;
+  background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%);
+  padding: 45px;
+}
+
+.product-popup header .header-shadow > h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  line-height: 48px;
+}
+
+.product-popup header .header-shadow > p {
+  line-height: 55px;
+  font-size: 18px;
+  color: #cdd1d3;
+}
+
+.product-popup header .header-shadow > section > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-popup header .header-shadow > section .getit-btn {
+  border-radius: 4px;
+  padding: 15px 25px;
+  background-color: #5898f1;
+  color: white;
+}
+
+.product-popup .product-popup-body main .discussion {
+  margin: 50px auto;
+  width: 80%;
+}
+
+.product-popup .product-popup-body main .discussion h2 {
+  color: #999;
+  padding-bottom: 20px;
+}
+
+.product-popup .product-popup-body main .discussion .post-comment {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.product-popup .product-popup-body main .discussion .post-comment img {
+  margin-right: 15px;
+}
+
+.product-popup .product-popup-body main .discussion .post-comment input {
+  padding: 10px;
+  font-size: 15px;
+  width: 90%;
+  border: 1px solid #f0efef;
+}
+
+.comment-list li {
+  padding: 20px 0;
+  list-style: none;
+}
+
+.comment-list li > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.comment-list li > section {
+  margin-left: 15px;
+}
+
+.comment-list li > section strong {
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.comment-list li > section p {
+  font-size: 14px;
+}
+
+
+
+
+
+
+/* ================== ProfileMenu CSS ================== */
+
+.profile-menu .profile-btn {
+  opacity: 0.9;
+}
+
+.profile-menu .profile-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.profile-menu .profile-nav {
+  position: fixed;
+  top: 80px;
+  right: 45px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+}
+
+
+.profile-menu .profile-nav > a {
+  display: block;
+  font-size: 15px;
+  width: 140px;
+  line-height: 38px;
+  color: #bbbbbb;
+
+}
+
+.profile-menu .profile-nav a:hover {
+  background-color: #f2f2f2;
+  color: #5e9aee;
+  border-radius: 4px;
+}
+
+.medium-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}

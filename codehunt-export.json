@@ -1,0 +1,30 @@
+{
+
+  "products":
+  {
+    "1": {
+      "name": "codeAcademy",
+      "link": "https://www.codeacademy.com",
+      "media": "/img/codeacademy.jpeg",
+      "upvote": 169,
+      "description": "Code for anyone",
+      "maker": {
+        "name": "Nathan Park",
+        "avatar": "/img/hieu.jpeg"
+      }
+    },
+
+    "2": {
+      "name": "Code4Startup",
+      "link": "https://www.code4startup.com",
+      "media": "/img/code4startup.jpeg",
+      "upvote": 248,
+      "description": "Code for startups",
+      "maker": {
+        "name": "Leo",
+        "avatar": "/img/leo.jpeg"
+      }
+    }
+
+  }
+}
